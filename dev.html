@@ -359,6 +359,12 @@ footer { max-width: 880px; margin: 72px auto 0; padding: 28px 24px 48px; border-
     <p class="lead">직접 만든 게임과 상용 게임을 QA 관점으로도 검증했습니다. 구현할 때 어디서 버그가 나기 쉬운지 먼저 떠올리는 습관이 여기서 생겼습니다.</p>
     <ul class="docs">
       <li>
+        <span class="name">상점 확률 자동 테스트</span>
+        <span class="fmt">C#, GitHub</span>
+        <span class="desc">등급 추첨 계산을 순수 함수로 분리해 Unity Test Framework로 검증. 경계값 테스트로 가중치 0 등급이 뽑히는 버그를 찾아 수정했고, 행운별 10만 회 시뮬레이션으로 분포를 확인했습니다.</span>
+        <a class="open" href="https://github.com/ksj000503/Unity-Project/blob/main/Assets/Tests/EditMode/ShopMathTests.cs">코드</a>
+      </li>
+      <li>
         <span class="name">POTATO SURVIVORS QA</span>
         <span class="fmt">PDF</span>
         <span class="desc">TC 55개로 버그 6건 검출, 원인 추적 후 수정·재검증. 게임과 테스트 어셈블리 분리, 단위 테스트, F1 디버그 콘솔.</span>
